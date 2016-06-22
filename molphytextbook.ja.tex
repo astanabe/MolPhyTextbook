@@ -224,12 +224,16 @@ Jalviewはデフォルトでは起動時にデモが始まってしまい、そ�
 もしも外部ネットワークへのアクセスにプロキシを設定する必要がある場合は、上記のコマンド実行の前に以下のコマンドを実行して環境変数を設定しておいて下さい。これにより、外部へはプロキシを経由してアクセスが行われるようになります。
 \begin{cmd}
 {\textgreater} export http{\textunderscore}proxy=http://server.address:portnumber↓\\
-{\textgreater} export ftp{\textunderscore}proxy=http://server.address:portnumber↓
+{\textgreater} export https{\textunderscore}proxy=\$http{\textunderscore}proxy↓\\
+{\textgreater} export ftp{\textunderscore}proxy=\$http{\textunderscore}proxy↓\\
+{\textgreater} export all{\textunderscore}proxy=\$http{\textunderscore}proxy↓
 \end{cmd}
 なお、ユーザー名とパスワードを用いた認証が必要なプロキシでは、以下のようにして下さい。
 \begin{cmd}
 {\textgreater} export http{\textunderscore}proxy=http://username:password@server.address:portnumber↓\\
-{\textgreater} export ftp{\textunderscore}proxy=http://username:password@server.address:portnumber↓
+{\textgreater} export https{\textunderscore}proxy=\$http{\textunderscore}proxy↓\\
+{\textgreater} export ftp{\textunderscore}proxy=\$http{\textunderscore}proxy↓\\
+{\textgreater} export all{\textunderscore}proxy=\$http{\textunderscore}proxy↓
 \end{cmd}
 
 \section{Linuxの場合}
